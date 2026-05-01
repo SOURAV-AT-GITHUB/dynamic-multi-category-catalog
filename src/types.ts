@@ -1,0 +1,16 @@
+export interface ItemProp {
+  label: string;
+  value: string;
+}
+
+export interface CatalogItem {
+  itemname: string;
+  category: string;
+  image: string;
+  itemprops: ItemProp[];
+}
+
+export interface CategoryGroup {
+  category: string;
+  items: CatalogItem[];
+}
